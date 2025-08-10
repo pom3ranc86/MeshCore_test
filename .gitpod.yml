@@ -1,0 +1,13 @@
+# .gitpod.yml
+tasks:
+  - before: |
+      pip install platformio
+    init: |
+      platformio update
+    command: |
+      # Zde můžete zadat jakýkoli další příkaz, který chcete spustit po instalaci, např.
+      platformio run
+
+vscode:
+  extensions:
+    - platformio.platformio-ide
